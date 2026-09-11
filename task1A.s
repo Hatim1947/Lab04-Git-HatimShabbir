@@ -1,6 +1,9 @@
 .text
 .globl main
 main:
+addi x5, x0, 1 # acc = 1
+addi x10, x0, 5 # n=5
+jal x1, fact # call fact function
 
 fact:
 addi sp , sp , -8 # adjust stack for 2 items
