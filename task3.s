@@ -33,8 +33,8 @@ NoSwap:
     j    ForLoop            # Jump back to top of ForLoop
 
 ForLoopExit:
-    beq  x18, x0, ExitSort  # If flag == 0 (no swaps)
-    j    DowhileLoop        # If flag == 1 (swaps happened)
+    beq x18, x0, ExitSort  # If flag == 0 (no swaps)
+    j DowhileLoop        # If flag == 1 (swaps happened)
 
 ExitSort:
-    j    ExitSort
+    j ExitSort
